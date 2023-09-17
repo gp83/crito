@@ -47,7 +47,11 @@ html, body {
 
 .home__page {
   background-color: #F0EFE9;
-  height: 900px;
+}
+@media (max-width: 1199px) {
+  .home__page {
+    height: 900px;
+  }
 }
 .home__page .company__logo {
   margin-right: 30px;
@@ -67,7 +71,7 @@ html, body {
   .home__page .header .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
     flex: 1;
   }
@@ -75,10 +79,13 @@ html, body {
 .home__page .header .menu .top__menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: solid 1px #DAD9D3;
 }
 .home__page .header .menu .top__menu .contact__information {
   display: flex;
+  padding-bottom: 15px;
+  margin-top: 15px;
 }
 .home__page .header .menu .top__menu .contact__information .content__box {
   margin-right: 30px;
@@ -101,6 +108,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 .home__page .header .menu .main__menu nav a {
   text-decoration: none;
@@ -116,59 +124,78 @@ html, body {
     display: none;
   }
 }
-.home__page .content {
+.home__page .banner {
+  display: flex;
+  justify-content: left;
   height: 80%;
 }
-.home__page .content.container {
+.home__page .banner .content {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  height: 80%;
 }
 @media (min-width: 426px) and (max-width: 1023px) {
-  .home__page .content.container {
+  .home__page .banner .content {
     width: 80%;
   }
 }
 @media (min-width: 426px) and (max-width: 1024px) {
-  .home__page .content .cotnent__style {
+  .home__page .banner .cotnent__style {
     max-width: 450px;
   }
 }
-.home__page .content .main__text {
+.home__page .banner .main__text {
   font-size: 3.2rem;
   font-weight: 700;
 }
 @media (min-width: 426px) and (max-width: 1024px) {
-  .home__page .content .main__text {
+  .home__page .banner .main__text {
     font-size: 3.5rem;
+    min-width: 450px;
   }
 }
 @media (min-width: 1025px) {
-  .home__page .content .main__text {
-    max-width: 550px;
-    font-size: 4rem;
+  .home__page .banner .main__text {
+    max-width: 650px;
+    font-size: 5rem;
   }
 }
-.home__page .content .sub__text {
+.home__page .banner .sub__text {
   font-size: 0.9rem;
   color: rgba(25, 25, 25, 0.7);
 }
 @media (min-width: 1025px) {
-  .home__page .content .sub__text {
-    max-width: 550px;
+  .home__page .banner .sub__text {
+    min-width: 650px;
+    font-size: 1.1rem;
   }
 }
-.home__page .content .btns__banner {
+.home__page .banner .btns__banner {
   margin-top: 20px;
 }
-.home__page .content .btns__banner .btn__yellow,
-.home__page .content .btns__banner .btn__transparent {
+.home__page .banner .btns__banner .btn__yellow,
+.home__page .banner .btns__banner .btn__transparent {
   margin-right: 20px;
 }
 @media (max-width: 425px) {
-  .home__page .content .btns__banner .btn__yellow,
-  .home__page .content .btns__banner .btn__transparent {
+  .home__page .banner .btns__banner .btn__yellow,
+  .home__page .banner .btns__banner .btn__transparent {
     font-size: 0.8rem;
     margin-right: 10px;
+  }
+}
+.home__page .banner .banner__img {
+  display: none;
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .home__page .banner .banner__img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .home__page .banner .banner__img {
+    display: block;
   }
 }

@@ -56,7 +56,12 @@ html, body {
 .home__page {
 
     background-color: #F0EFE9;
-    height: 900px;
+
+
+    @media (max-width: 1199px) {
+        height: 900px;
+    }
+    
     
 
     .company__logo {
@@ -80,7 +85,7 @@ html, body {
             @media (min-width: 1023px) {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: center;
                 height: 100%;
                 flex: 1;
             }
@@ -88,10 +93,13 @@ html, body {
             .top__menu {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 border-bottom: solid 1px #DAD9D3;
 
                 .contact__information {
                     display: flex;
+                    padding-bottom: 15px;
+                    margin-top: 15px;
 
                     .content__box {        
 
@@ -124,6 +132,7 @@ html, body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin-top: 15px;
 
                 nav {
 
@@ -154,14 +163,23 @@ html, body {
     }
 
 
-    .content {
 
+    
+
+
+
+
+    .banner {
+
+        display: flex;
+        justify-content: left;
         height: 80%;
 
-        &.container{
+        .content{
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            height: 80%;
 
             @media (min-width:426px) and (max-width:1023px) {
                 width: 80%;
@@ -183,11 +201,12 @@ html, body {
 
             @media (min-width:426px) and (max-width:1024px) {
                 font-size: 3.5rem;
+                min-width: 450px;
             } 
 
             @media (min-width:1025px){
-                max-width: 550px;
-                font-size: 4rem;
+                max-width: 650px;
+                font-size: 5rem;
                 
             } 
 
@@ -198,7 +217,8 @@ html, body {
             color: rgba(25,25,25,0.7 );
 
             @media (min-width:1025px){
-                max-width: 550px;
+                min-width: 650px;
+                font-size: 1.1rem;
                                 
             } 
         }
@@ -220,9 +240,30 @@ html, body {
             
         }
 
+
+        .banner__img {
+
+            display: none;
+            
+            @media (min-width: 768px)  and (min-width: 1024px){
+                width: 200px;
+                height: auto;
+            }
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+
+        }
+
     }
 
+    
+
 }
+
+
+
 
 
 
