@@ -261,6 +261,29 @@ html, body {
 
     
 
+}  
+
+.logos {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    @media (max-width: 993px) {
+        justify-content: center;
+    }
+
+    height: 200px;
+
+    img {
+        @media (max-width: 1024px) {
+            width: 180px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 250px;
+        }
+    }
+
 }
 
 

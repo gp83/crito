@@ -200,3 +200,24 @@ html, body {
     display: block;
   }
 }
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+}
+@media (max-width: 993px) {
+  .logos {
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .logos img {
+    width: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  .logos img {
+    width: 250px;
+  }
+}
