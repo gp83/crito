@@ -103,6 +103,7 @@ html, body {
 .home__page .header .menu .top__menu .social__media a {
   color: #191919;
   margin-left: 15px;
+  font-size: 20px;
 }
 .home__page .header .menu .main__menu {
   display: flex;
