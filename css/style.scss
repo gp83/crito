@@ -12,6 +12,7 @@ html, body {
     border: 1px solid #F9D783;
     color: #191919;
     text-decoration: none;
+    text-align: center;
     padding: 8px 25px;
     font-weight: 600;
     font-size: 16px;
@@ -37,6 +38,7 @@ html, body {
     padding: 8px 25px;
     font-weight: 600;
     font-size: 16px;
+    text-align: center;
     border: 1px solid black;
     border-radius: 25px;
 
@@ -150,9 +152,6 @@ html, body {
     }
 
 
-
-
-
     .menu__bars {
         border: none;
         font-size: 25px;
@@ -174,16 +173,18 @@ html, body {
 
         display: flex;
         justify-content: left;
-        height: 80%;
+        height: 780px;
 
         .content{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 80%;
+            
 
             @media (min-width:426px) and (max-width:1023px) {
-                width: 80%;
+                display: flex;
+                align-items: center;
+                width: 100%;
             } 
 
         }
@@ -218,9 +219,8 @@ html, body {
             color: rgba(25,25,25,0.7 );
 
             @media (min-width:1025px){
-                min-width: 650px;
-                font-size: 1.1rem;
-                                
+                max-width: 650px;
+                font-size: 1.1rem;              
             } 
         }
 
@@ -253,6 +253,7 @@ html, body {
 
             @media (min-width: 1200px) {
                 display: block;
+                margin-top: 50px;
             }
 
         }
@@ -267,12 +268,15 @@ html, body {
 
     display: flex;
     flex-wrap: wrap;
+    margin-top: 75px;
+    margin-bottom: 75px;
     
     @media (max-width: 993px) {
         justify-content: center;
+        height: 200px;
     }
 
-    height: 200px;
+    height: 88px;
 
     img {
         @media (max-width: 1024px) {
@@ -286,7 +290,106 @@ html, body {
 
 }
 
+.fetures {
 
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
+    @media (min-width:1024px) {
+        border: 1px solid #DAD9D3;
+        padding: 80px;
+    } 
+
+    .fetures__text{
+
+        @media (max-width: 425px) {
+            margin-bottom: 50px;
+        }
+
+        @media (min-width:426px) and (max-width:1023px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            margin: auto;
+        } 
+
+        @media (min-width:1024px) and (max-width:1199px) {
+            max-width: 350px;
+        } 
+
+        @media (min-width:1200px) {
+            max-width: 460px;
+        } 
+        
+        .fetures__sub__text {
+            font-size: 18px;
+            color: #f94d1c;
+        }
+
+        .fetures__main__text {
+            font-size: 2rem;
+            font-weight: bold;
+
+            @media (min-width:1200px) {
+                font-size: 45px;
+            } 
+
+        }
+
+        .btn__yellow {
+            
+            @media (max-width: 767px) {
+                width: 180px;
+            }
+
+            @media (min-width: 768px) {
+                display: block;
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    .fetures__cards {
+
+        @media (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        } 
+        
+        .fetures__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            max-width: 307px;
+            height: 220px;
+            padding: 25px 40px;
+
+            h3 {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            i {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            p {
+                color: #a7a6a4;
+            }
+        }
+
+    }
+    
+}
 
 
 

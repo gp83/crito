@@ -11,6 +11,7 @@ html, body {
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
+  text-align: center;
   padding: 8px 25px;
   font-weight: 600;
   font-size: 16px;
@@ -32,6 +33,7 @@ html, body {
   padding: 8px 25px;
   font-weight: 600;
   font-size: 16px;
+  text-align: center;
   border: 1px solid black;
   border-radius: 25px;
 }
@@ -128,17 +130,18 @@ html, body {
 .home__page .banner {
   display: flex;
   justify-content: left;
-  height: 80%;
+  height: 780px;
 }
 .home__page .banner .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80%;
 }
 @media (min-width: 426px) and (max-width: 1023px) {
   .home__page .banner .content {
-    width: 80%;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 @media (min-width: 426px) and (max-width: 1024px) {
@@ -168,7 +171,7 @@ html, body {
 }
 @media (min-width: 1025px) {
   .home__page .banner .sub__text {
-    min-width: 650px;
+    max-width: 650px;
     font-size: 1.1rem;
   }
 }
@@ -198,17 +201,21 @@ html, body {
 @media (min-width: 1200px) {
   .home__page .banner .banner__img {
     display: block;
+    margin-top: 50px;
   }
 }
 
 .logos {
   display: flex;
   flex-wrap: wrap;
-  height: 200px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 88px;
 }
 @media (max-width: 993px) {
   .logos {
     justify-content: center;
+    height: 200px;
   }
 }
 @media (max-width: 1024px) {
@@ -220,4 +227,94 @@ html, body {
   .logos img {
     width: 250px;
   }
+}
+
+.fetures {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .fetures {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .fetures {
+    border: 1px solid #DAD9D3;
+    padding: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .fetures .fetures__text {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 426px) and (max-width: 1023px) {
+  .fetures .fetures__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .fetures .fetures__text {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .fetures .fetures__text {
+    max-width: 460px;
+  }
+}
+.fetures .fetures__text .fetures__sub__text {
+  font-size: 18px;
+  color: #f94d1c;
+}
+.fetures .fetures__text .fetures__main__text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (min-width: 1200px) {
+  .fetures .fetures__text .fetures__main__text {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .fetures .fetures__text .btn__yellow {
+    width: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .fetures .fetures__text .btn__yellow {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .fetures .fetures__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.fetures .fetures__cards .fetures__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 307px;
+  height: 220px;
+  padding: 25px 40px;
+}
+.fetures .fetures__cards .fetures__card h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.fetures .fetures__cards .fetures__card i {
+  font-size: 40px;
+  font-weight: bold;
+}
+.fetures .fetures__cards .fetures__card p {
+  color: #a7a6a4;
 }
