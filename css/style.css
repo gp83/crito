@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@300;400;500;700;900&family=Lusitana:wght@400;700&family=Raleway:ital,wght@0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   color: #191919;
   font-size: 16px;
@@ -45,6 +50,27 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #DAD9D3;
+}
+
+.btn__black {
+  color: #DAD9D3;
+  background-color: #191919;
+  text-decoration: none;
+  padding: 8px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.btn__black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn__black:hover {
+  background-color: #F0EFE9;
+  border: 1px solid #191919;
+  color: #191919;
 }
 
 .home__page {
@@ -326,9 +352,18 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  max-width: 1320;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .company {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 @media (min-width: 1024px) {
   .company {
+    flex-direction: row;
     margin-top: 120px;
     align-items: flex-start;
     max-width: 1300px;
@@ -341,10 +376,30 @@ html, body {
   align-items: center;
   min-width: 350px;
 }
+@media (min-width: 1024px) {
+  .company .company__img__wrapper {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1199px) {
+  .company .company__img__wrapper {
+    max-width: 500px;
+  }
+}
 .company .company__img__wrapper .company__img {
   max-width: 300px;
 }
-.company .company__img__wrapper .company__text__wrapper {
+@media (min-width: 1024px) {
+  .company .company__img__wrapper .company__img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1199px) {
+  .company .company__img__wrapper .company__img {
+    max-width: 500px;
+  }
+}
+.company .company__img__wrapper .company__founder__wrapper {
   position: absolute;
   bottom: 70px;
   left: 0;
@@ -352,6 +407,59 @@ html, body {
   background-color: #beebff;
   font-weight: bold;
 }
-.company .company__img__wrapper .company__text__wrapper .founder {
+@media (min-width: 1024px) {
+  .company .company__img__wrapper .company__founder__wrapper {
+    bottom: 140px;
+    left: -25px;
+    width: 260px;
+  }
+}
+@media (min-width: 1199px) {
+  .company .company__img__wrapper .company__founder__wrapper {
+    bottom: 200px;
+    width: 320px;
+  }
+}
+.company .company__img__wrapper .company__founder__wrapper .founder {
   color: #f94d1c;
+}
+.company .company__text {
+  width: 350px;
+}
+@media (min-width: 1199px) {
+  .company .company__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 530px;
+    height: 590px;
+  }
+}
+.company .company__text .company__about {
+  color: #f94d1c;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.company .company__text .company__header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (min-width: 1199px) {
+  .company .company__text .company__header {
+    font-size: 45px;
+  }
+}
+.company .company__text .company__btn {
+  display: flex;
+  align-items: center;
+}
+.company .company__text .company__btn .btn__black {
+  margin-right: 30px;
+}
+.company .company__text .company__btn .fa-circle-play {
+  font-size: 48px;
+}
+.company .company__text .company__btn .video__text {
+  margin-left: 10px;
 }
