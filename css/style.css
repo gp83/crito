@@ -237,12 +237,13 @@ html, body {
   .fetures {
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-@media (min-width: 1024px) {
-  .fetures {
     border: 1px solid #DAD9D3;
     padding: 80px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .fetures {
+    flex-direction: column;
   }
 }
 @media (max-width: 425px) {
@@ -260,7 +261,9 @@ html, body {
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .fetures .fetures__text {
+    align-self: center;
     max-width: 350px;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -317,4 +320,38 @@ html, body {
 }
 .fetures .fetures__cards .fetures__card p {
   color: #a7a6a4;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .company {
+    margin-top: 120px;
+    align-items: flex-start;
+    max-width: 1300px;
+  }
+}
+.company .company__img__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+}
+.company .company__img__wrapper .company__img {
+  max-width: 300px;
+}
+.company .company__img__wrapper .company__text__wrapper {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 230px;
+  background-color: #beebff;
+  font-weight: bold;
+}
+.company .company__img__wrapper .company__text__wrapper .founder {
+  color: #f94d1c;
 }

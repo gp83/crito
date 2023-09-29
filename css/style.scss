@@ -298,14 +298,16 @@ html, body {
     @media (min-width:1024px) {
         flex-direction: row;
         justify-content: space-between;
-    } 
-
-    @media (min-width:1024px) {
         border: 1px solid #DAD9D3;
         padding: 80px;
     } 
 
+    @media (min-width:1024px) and (max-width:1199px) {
+        flex-direction: column;
+    } 
+
     .fetures__text{
+
 
         @media (max-width: 425px) {
             margin-bottom: 50px;
@@ -319,7 +321,9 @@ html, body {
         } 
 
         @media (min-width:1024px) and (max-width:1199px) {
+            align-self: center;
             max-width: 350px;
+            margin-bottom: 80px;
         } 
 
         @media (min-width:1200px) {
@@ -388,6 +392,47 @@ html, body {
         }
 
     }
+    
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: 1024px) {
+        margin-top: 120px;
+        align-items: flex-start;
+        max-width: 1300px;
+    }
+    
+    .company__img__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 350px;
+
+        .company__img{
+            max-width: 300px;
+         }
+
+         .company__text__wrapper {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            width: 230px;
+            background-color: #beebff;
+            font-weight: bold;
+
+            .founder {
+                color: #f94d1c;
+            }
+         }
+     
+
+    }
+
     
 }
 
