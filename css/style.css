@@ -521,7 +521,10 @@ html, body {
 .services .services__wrapper .services__card .services__card__container .services__card__header {
   font-weight: 700;
 }
-.services .services__wrapper .services__card .services__card__container .fa-arrow-right {
+.services .services__wrapper .services__card .services__card__container .arrow__right {
+  align-self: flex-end;
+}
+.services .services__wrapper .services__card .services__card__container .arrow__right .fa-arrow-right {
   font-size: 25px;
   text-align: center;
   background-color: #191919;
@@ -529,7 +532,6 @@ html, body {
   border: 1px solid #191919;
   border-radius: 50%;
   color: white;
-  align-self: flex-end;
   padding: 10px;
 }
 .services .services__wrapper .services__card .services__card__container__yellow {
@@ -554,7 +556,10 @@ html, body {
 .services .services__wrapper .services__card .services__card__container__yellow .services__card__header {
   font-weight: 700;
 }
-.services .services__wrapper .services__card .services__card__container__yellow .fa-arrow-right {
+.services .services__wrapper .services__card .services__card__container__yellow .arrow__right {
+  align-self: flex-end;
+}
+.services .services__wrapper .services__card .services__card__container__yellow .arrow__right .fa-arrow-right {
   font-size: 25px;
   text-align: center;
   background-color: white;
@@ -562,7 +567,6 @@ html, body {
   border: 1px solid white;
   border-radius: 50%;
   color: #191919;
-  align-self: flex-end;
   padding: 10px;
 }
 .services .services__wrapper .btn__transparent {
